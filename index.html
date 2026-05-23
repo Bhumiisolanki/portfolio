@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <span class="logo">Bhumi 🌸</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <p class="Greeting">Hello, World 🌷</p>
+      <img src="Avatar.png" alt="Bhumi's illustration" class="avatar" />
+      <h1>Hi, I'm Bhumi ✨</h1>
+      <p class="tagline">CSE Student • Digital Artist • Creative Mind</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me 🌸</h2>
+      <p>I'm a CSE student who loves building things on the web and making digital art on the side. I think code and creativity are better together.</p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills 🌷</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Digital Art</div>
+        <div class="skill-card">UI Design</div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects 🎨</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Stone Paper Scissors 🎮</h3>
+          <p>A fun Python game built from scratch</p>
+          <a href="#" class="btn">View Code</a>
+        </div>
+        <div class="project-card">
+          <h3>Digital Artwork 🌸</h3>
+          <p>Illustrations and character designs from dreamer.</p>
+          <a href="#" class="btn" onclick="openGallery()">View Art</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Say Hello 💌</h2>
+      <p>I'd love to connect — whether it's about projects, collabs, or just a chat!</p>
+      <div class="contact-links">
+        <a href="mailto:dreamerillustrates16@gmail.com" class="btn">Email Me</a>
+        <a href="https://github.com/Bhumiisolanki" class="btn btn-green">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>made with 🌸 by Bhumi</p>
+      <div class="footer-links">
+        <a href="mailto:dreamerillustrates16@gmail.com">Email</a>
+        <a href="https://github.com/Bhumiisolanki">GitHub</a>
+        <a href="https://www.instagram.com/dreamer.illustrates">Instagram</a>
+      </div>
+      <p class="copyright">© 2026 Bhumi. All rights reserved.</p>
+    </footer>
+
+    <button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <div class="gallery-modal" id="galleryModal">
+      <div class="gallery-content">
+        <span class="close-btn" onclick="closeGallery()">✕</span>
+        <h2>My Artworks 🎨</h2>
+        <div class="artwork-grid">
+          <img src="artwork1.png" class="artwork" />
+          <img src="artwork2.png" class="artwork" />
+          <img src="artwork3.png" class="artwork" />
+          <img src="artwork4.png" class="artwork" />
+          <img src="artwork5.png" class="artwork" />
+          <img src="artwork6.png" class="artwork" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
