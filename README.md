@@ -1,16 +1,16 @@
-# 🌸 Bhumi's Portfolio Website
+# Bhumi's Portfolio Website
 
 A personal portfolio website built with HTML, CSS, and JavaScript.
 
-## ✨ Live Demo
+##  Live Demo
 [View Portfolio](https://bhumiisolanki.github.io/portfolio)
 
-## 🛠️ Built With
+##  Built With
 - HTML
 - CSS
 - JavaScript
 
-## 📌 Features
+##  Features
 - Dreamy pastel design
 - Floating illustration hero
 - Typing effect on tagline
@@ -18,7 +18,7 @@ A personal portfolio website built with HTML, CSS, and JavaScript.
 - Hover effects on cards
 - Smooth back to top button
 
-## 📬 Contact
+##  Contact
 - Email: dreamerillustrates16@gmail.com
 - GitHub: [@Bhumiisolanki](https://github.com/Bhumiisolanki)
 - Instagram: [@dreamer.illustrates](https://www.instagram.com/dreamer.illustrates)
