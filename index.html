@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -40,17 +42,60 @@
     </section>
 
     <section class="skills" id="skills">
-      <h2>Skills 🌷</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Digital Art</div>
-        <div class="skill-card">UI Design</div>
+      <div class="container">
+        <h2>Skills 🌷</h2>
+
+        <!-- Badges — same as before -->
+        <div class="skills-grid mb-5">
+          <span class="skill-card badge">HTML</span>
+          <span class="skill-card badge">CSS</span>
+          <span class="skill-card badge">JavaScript</span>
+          <span class="skill-card badge">Python</span>
+          <span class="skill-card badge">Digital Art</span>
+          <span class="skill-card badge">UI Design</span>
+        </div>
+
+        <!-- Progress Bars -->
+        <div style="max-width: 500px; margin: 0 auto; text-align: left">
+          <p class="mb-1">HTML & CSS</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              style="width: 90%; background-color: #c9768a"
+            >
+              90%
+            </div>
+          </div>
+          <p class="mb-1">JavaScript</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              style="width: 70%; background-color: #c9768a"
+            >
+              70%
+            </div>
+          </div>
+          <p class="mb-1">Python</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              style="width: 75%; background-color: #6aab7e"
+            >
+              75%
+            </div>
+          </div>
+          <p class="mb-1">Digital Art</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              style="width: 85%; background-color: #6aab7e"
+            >
+              85%
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <section class="projects" id="projects">
       <h2>Projects 🎨</h2>
       <div class="projects-grid">
@@ -94,7 +139,14 @@
         </div>
 
         <div class="project-card">
-          <h3>To-Do App 📝</h3>
+          <h3 class="card-title">
+            To-Do App 📝
+            <span
+              class="badge"
+              style="background-color: #c9768a; font-size: 0.6rem"
+              >New</span
+            >
+          </h3>
           <p>
             A task manager built with HTML CSS and JavaScript with add, delete
             and mark done features
@@ -111,19 +163,48 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
-      <h2>Say Hello 💌</h2>
-      <p>
-        I'd love to connect — whether it's about projects, collabs, or just a
-        chat!
-      </p>
-      <div class="contact-links">
-        <a href="mailto:dreamerillustrates16@gmail.com" class="btn">Email Me</a>
-        <a href="https://github.com/Bhumiisolanki" class="btn btn-green"
-          >GitHub</a
+      <div class="container text-center">
+        <h2>Say Hello 💌</h2>
+        <p>
+          I'd love to connect — whether it's about projects, collabs, or just a
+          chat!
+        </p>
+        <div
+          class="contact-links d-flex justify-content-center gap-3 flex-wrap"
         >
+          <a
+            href="mailto:dreamerillustrates16@gmail.com"
+            class="btn"
+            onclick="showToast()"
+            >Email Me</a
+          >
+          <a href="https://github.com/Bhumiisolanki" class="btn btn-green"
+            >GitHub</a
+          >
+        </div>
       </div>
     </section>
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+      <div
+        id="myToast"
+        class="toast align-items-center text-white"
+        style="background-color: #c9768a"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Opening your mail app! 💌</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>made with 🌸 by Bhumi</p>
@@ -160,4 +241,6 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+  
 </html>
+
