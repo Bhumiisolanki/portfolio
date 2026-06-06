@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Functions(Return value)</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function foo(p1) {
+
+            if (typeof p1 == "number")
+                return 0;
+
+            else if (typeof p1 == "string")
+                return "zero";
+        }
+
+        document.getElementById("demo").innerHTML = foo(10);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaScript String Methods</title>
+</head>
+
+<body>
+
+    <h1>JavaScript String Methods</h1>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+
+    <script>
+
+        var str = "Hello Bhumi";
+        var str2 = " Welcome";
+        var str3 = "   JavaScript   ";
+
+        document.getElementById("demo1").innerHTML =
+            "Length: " + str.length;
+
+        document.getElementById("demo2").innerHTML =
+            "Uppercase: " + str.toUpperCase();
+
+        document.getElementById("demo3").innerHTML =
+            "Lowercase: " + str.toLowerCase();
+
+        document.getElementById("demo4").innerHTML =
+            "Slice: " + str.slice(0, 5);
+
+        document.getElementById("demo5").innerHTML =
+            "Replace: " + str.replace("Bhumi", "World");
+
+        document.getElementById("demo6").innerHTML =
+            "charAt(1): " + str.charAt(1);
+
+        document.getElementById("demo7").innerHTML =
+            "Concat: " + str.concat(str2);
+
+        document.getElementById("demo8").innerHTML =
+            "Search: " + str.search("Bhumi");
+
+        document.getElementById("demo9").innerHTML =
+            "Substring: " + str.substring(0, 5);
+
+        document.getElementById("demo10").innerHTML =
+            "indexOf('o'): " + str.indexOf("o");
+
+        document.getElementById("demo11").innerHTML =
+            "lastIndexOf('o'): " + str.lastIndexOf("o");
+
+        document.getElementById("demo12").innerHTML =
+            "Trim: " + str3.trim();
+
+        document.getElementById("demo13").innerHTML =
+            "Includes 'Bhumi': " + str.includes("Bhumi");
+
+        document.getElementById("demo14").innerHTML =
+            "StartsWith 'Hello': " + str.startsWith("Hello");
+
+        document.getElementById("demo15").innerHTML =
+            "EndsWith 'Bhumi': " + str.endsWith("Bhumi");
+
+    </script>
+
+</body>
+
+</html>
