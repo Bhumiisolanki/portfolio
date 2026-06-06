@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Over and Mouse Out</title>
+</head>
+
+<body>
+
+    <img id="bulb"
+     src="images.jpg"
+     width="300"
+     style="cursor:pointer;">
+
+    <script>
+
+        var a = document.getElementById("bulb");
+
+        a.addEventListener("mouseover", () => {
+
+            a.src = "download.jpg";
+
+        });
+
+        a.addEventListener("mouseout", () => {
+
+            a.src = "images.jpg";
+
+        });
+
+    </script>
+    
+
+</body>
+
+</html>

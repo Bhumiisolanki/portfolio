@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>if/elseStatements in Javascript</title>
+  </head>
+  <body>
+    <!-- Even Odd Program -->
+    <h1>Even Odd Number</h1>
+    <p id="demo1"></p>
+
+    <h1>Pass Fail</h1>
+    <p id="demo2"></p>
+
+    <h1>leap year</h1>
+    <p id="demo3"></p>
+
+    <h1>Driving eligibility</h1>
+    <p id="demo4"></p>
+
+    <h1>Temperature check</h1>
+    <p id="demo5"></p>
+
+    <h1>Grade Calculator</h1>
+    <p id="demo6"></p>
+
+    <h1>Atm Withdrawl</h1>
+    <p id="demo7"></p>
+
+    <script>
+      // even odd program
+
+      var num = 7;
+      if (num % 2 == 0) {
+        document.getElementById("demo1").innerHTML =
+          num + " is an even number.";
+      } else {
+        document.getElementById("demo1").innerHTML = num + " is an odd number.";
+      }
+
+      //Pass Fail Program
+
+      var marks = 35;
+      if (marks >= 35) {
+        document.getElementById("demo2").innerHTML = "Student is pass";
+      } else {
+        document.getElementById("demo2").innerHTML = "student is fail";
+      }
+
+      //leap year
+
+      var year = 2024;
+      if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        document.getElementById("demo3").innerHTML = year + " is a leap year.";
+      } else {
+        document.getElementById("demo3").innerHTML =
+          year + " is not a leap year.";
+      }
+
+      // Driving eligibility
+
+      var age = 20;
+      if (age >= 18) {
+        document.getElementById("demo4").innerHTML =
+          "you are eligible to drive.";
+      } else {
+        document.getElementById("demo4").innerHTML =
+          "you are not eligible to drive.";
+      }
+
+      // Temperature check
+
+      var temp = 32;
+      if (temp > 30) {
+        document.getElementById("demo5").innerHTML = "Weather is hot.";
+      } else if (temp >= 20 && temp <= 30) {
+        document.getElementById("demo5").innerHTML = "Weather is warm.";
+      }
+
+      // Grade Calculator
+
+      var marks = 78;
+      if (marks >= 90) {
+        document.getElementById("demo6").innerHTML = "Grade: A";
+      } else if (marks >= 75) {
+        document.getElementById("demo6").innerHTML = "Grade: B";
+      } else if (marks >= 50) {
+        document.getElementById("demo6").innerHTML = "Grade: C";
+      } else {
+        document.getElementById("demo6").innerHTML = "Grade: Fail";
+      }
+
+      //ATM withdrawal
+
+      var balance = 5000;
+      var withdraw = 2000;
+
+      if (withdraw <= balance) {
+        document.getElementById("demo7").innerHTML = "Withdrawal Successful";
+      } else {
+        document.getElementById("demo7").innerHTML = "Insufficient Balance";
+      }
+    </script>
+  </body>
+</html>
