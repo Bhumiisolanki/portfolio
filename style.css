@@ -236,25 +236,32 @@ nav ul a:hover {
     box-shadow: 0 12px 30px rgba(201, 118, 138, 0.2);
 }
 
-.project-card:nth-child(2),
-.project-card:nth-child(4) {
+.project-card:nth-child(3),
+.project-card:nth-child(5) {
     background-color: #f0fff4;
     border: 1px solid #b8e6c4;
 }
 
-.project-card:nth-child(2) h3,
-.project-card:nth-child(4) h3 {
+.project-card:nth-child(3) h3,
+.project-card:nth-child(5) h3 {
     color: #6aab7e;
 }
 
-.project-card:nth-child(2) .btn,
-.project-card:nth-child(4) .btn {
+.project-card:nth-child(3) .btn,
+.project-card:nth-child(5) .btn {
     background-color: #6aab7e;
 }
 
-.project-card:nth-child(2) .btn:hover,
-.project-card:nth-child(4) .btn:hover {
+.project-card:nth-child(3) .btn:hover,
+.project-card:nth-child(5) .btn:hover {
     background-color: #4e8f63;
+}
+
+.featured-card {
+    background-color: #fff0f3;
+    border: 2px solid #c9768a;
+    max-width: 320px;
+    box-shadow: 0 8px 24px rgba(201, 118, 138, 0.25);
 }
 
 .project-card h3 {
